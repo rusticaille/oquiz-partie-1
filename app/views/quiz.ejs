@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h2 class="h1 display-4"><%=quiz.title%></h2>
+            <p class="lead"><%=quiz.description%></p>
+            <p class="font-weight-bold"><%=quiz.author.firstname%> <%=quiz.author.lastname%> </p>
+            <p class="lead"><%=quiz.questions.length%></p>
+        </div>
+
+        <div class="row">
+
+            <% for (i = 0 ; i < quiz.tags.length ; i++) { %> 
+            <div class="col-3 p-4 text-center">
+                <a class="btn btn-block btn-lg tag tag--<%=quiz.tags[i].name.toLowerCase()%>" href="#">
+                    <%=quiz.tags[i].name%>
+                </a>
+            </div>
+            <% } %>
+        </div>
+
+        <div class="row">
+
+            <% for (const question of questions){ %>
+
+            <div class="col-12">
+                <label class="badge level level--<%=question.level.name.toLowerCase()%>"><%=question.level.name%></label>
+                <h4>
+                    <%=question.question %>
+                </h4>
+
+                <% for (const answer of question.answers){ %>
+                    <input value="<%=answer.description%>" id="<%answer.id%>" type="radio" name="<%=question.id %>" />
+                    <label for="<%=answer.id%>" name="<%=question.id %>"><%=answer.description%> </label>
+                    </br>
+                <% } %>
+            </div>
+
+           <% } %> 
+
+        </div>
+<%- include('partials/footer') %>
+
+    
