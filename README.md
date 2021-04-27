@@ -2,6 +2,7 @@
 
 (avril 2021)
 Exploiter une BDD qui fonctionne postgressql et sequelize pour construire une app de quizz.
+Projet étendu sur 15 jours, en partant d'une demande client, depuis l'analyse de la demande jusqu'au résultat fonctionnel. Voici une des étapes.
 
 ## Fournis
 
@@ -24,5 +25,14 @@ Exploiter une BDD qui fonctionne postgressql et sequelize pour construire une ap
   - Accéder à chaque quizz et query de toutes les infos en BDD
   - idem pour la pages 'sujets' et pouvoir visualiser tous les quizzes pour un sujet donné
 
-Login et signup gérés ensuite en cours.
+## Fait précédemment en cours
 
+  - Users Cases
+  - MCD, MLD
+  - Création de la BDD
+  - Création de modèles et d'un core modèle sans ORM
+
+## Fait en cours, ensuite
+  - Login et signup gérés ensuite en cours
+  - découverte des packages email validator et bcrypt
+  - utlisation de fonctions asynchrones
