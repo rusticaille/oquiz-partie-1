@@ -1,8 +1,10 @@
 # oquiz-partie-1
 
 (avril 2021)
+
 Exploiter une BDD qui fonctionne postgressql et sequelize pour construire une app de quizz.
 Projet étendu sur 15 jours, en partant d'une demande client, depuis l'analyse de la demande jusqu'au résultat fonctionnel. Voici une des étapes.
+La deuxième partie est ici : https://github.com/rusticaille/oquiz-partie-2
 
 ## Fournis
 
